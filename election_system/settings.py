@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['presidentialrtc.site','145.223.85.248','www.presidentialrtc.site']
+ALLOWED_HOSTS = ['presidentialrtc.site', 'www.presidentialrtc.site', '127.0.0.1', 'localhost', '145.223.85.248']
 
 
 # Application definition
@@ -118,6 +118,12 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+]
+
+# Allow your domain and subdomain
+CSRF_TRUSTED_ORIGINS = [
+    'https://presidentialrtc.site',
+    'https://www.presidentialrtc.site',
 ]
 
 
