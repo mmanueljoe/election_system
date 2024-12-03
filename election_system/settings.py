@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['145.223.85.248.sslip.io']
+ALLOWED_HOSTS = ['presidentialrtc.site,145.223.85.248,www.presidentialrtc.site']
 
 
 # Application definition
