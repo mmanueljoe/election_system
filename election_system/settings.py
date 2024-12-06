@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'bootstrap5',
     'election_app',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,7 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        # for development
+        #for development
         # 'ENGINE': 'django.db.backends.mysql',
         # 'NAME': 'election_system_db',
         # 'USER': 'root',
